@@ -1,0 +1,12 @@
+<h1>Edit File</h1>
+<div>
+    <p>Title</p>
+    <input type="text" [(ngModel)]="fileData.title">
+</div>
+<div>
+    <p>Content</p>
+    <textarea [(ngModel)]="fileData.content"></textarea>
+</div>
+<button (click)="saveFile()">SAVE</button>
+<br>
+<a routerLink="/home">RETURN TO HOME PAGE</a>
